@@ -55,9 +55,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
   [1] = LAYOUT_moonlander(
     KC_NO,            KC_F1,         KC_F2,         KC_F3,        KC_F4,         KC_F5,            KC_F6,                                                       KC_NO,                 KC_NO,          KC_NO,          KC_NO,           KC_NO,           KC_NO,              KC_NO,
-    KC_NO,            KC_NO,         KC_MS_BTN2,    KC_MS_UP,     KC_MS_BTN1,    KC_MS_WH_DOWN,    KC_MS_WH_LEFT,                                               KC_NO,                 KC_NO,          KC_MS_BTN1,     KC_NO,           KC_MS_BTN2,      KC_NO,              KC_NO,
-    KC_NO,            KC_PGUP,       KC_MS_LEFT,    KC_MS_DOWN,   KC_MS_RIGHT,   KC_MS_WH_UP,      KC_MS_WH_RIGHT,                                              KC_NO,                 KC_NO,          KC_LSHIFT,      KC_LGUI,         KC_LALT,         KC_LCTRL,           KC_NO,
-    SH_MON,           KC_PGDOWN,     KC_MAC_CUT,    KC_MAC_COPY,  KC_MAC_PASTE,  KC_NO,                                                                                                KC_NO,          KC_MS_LEFT,     KC_MS_UP,        KC_MS_DOWN,      KC_MS_RIGHT,        SH_MON,
+    KC_NO,            KC_NO,         KC_MS_BTN2,    KC_MS_UP,     KC_MS_BTN1,    KC_MS_WH_DOWN,    KC_MS_WH_LEFT,                                               KC_NO,                 KC_MAC_CUT,     KC_MS_BTN1,     KC_NO,           KC_MS_BTN2,      KC_NO,              KC_NO,
+    KC_NO,            KC_PGUP,       KC_MS_LEFT,    KC_MS_DOWN,   KC_MS_RIGHT,   KC_MS_WH_UP,      KC_MS_WH_RIGHT,                                              KC_NO,                 KC_MAC_COPY,    KC_LSHIFT,      KC_LGUI,         KC_LALT,         KC_LCTRL,           KC_NO,
+    SH_MON,           KC_PGDOWN,     KC_MAC_CUT,    KC_MAC_COPY,  KC_MAC_PASTE,  KC_NO,                                                                                                KC_MAC_PASTE,   KC_MS_LEFT,     KC_MS_UP,        KC_MS_DOWN,      KC_MS_RIGHT,        SH_MON,
     KC_NO,            KC_NO,         KC_NO,         KC_NO,        KC_NO,         RGB_MOD,                                                                                              RGB_TOG,        KC_NO,          KC_NO,           KC_NO,           KC_NO,              KC_NO,
                                                                                  RGB_VAD,          RGB_VAI,               TOGGLE_LAYER_COLOR,         RGB_SLD,  RGB_SPD,               RGB_SPI
   ),
@@ -65,8 +65,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_NO,            KC_NO,         KC_NO,         KC_NO,        KC_NO,         KC_NO,            KC_NO,                                                       KC_F7,                 KC_F8,          KC_F9,          KC_F10,          KC_F11,          KC_F12,             KC_DELETE,
     KC_NO,            KC_NO,         KC_NO,         KC_NO,        KC_NO,         KC_NO,            KC_NO,                                                       KC_NO,                 KC_MAC_CUT,     LALT(KC_LEFT),  KC_UP,           LALT(KC_RIGHT),  KC_NO,              KC_NO,
     KC_NO,            KC_LCTRL,      KC_LALT,       KC_LGUI,      KC_LSHIFT,     KC_NO,            KC_NO,                                                       KC_NO,                 KC_MAC_COPY,    KC_LEFT,        KC_DOWN,         KC_RIGHT,        KC_PGUP,            KC_NO,
-    SH_MON,           KC_LEFT,       KC_UP,         KC_DOWN,      KC_RIGHT,      KC_NO,                                                                                                KC_MAC_CUT,     LGUI(KC_LEFT),  KC_NO,           LGUI(KC_RIGHT),  KC_PGDOWN,          SH_MON,
-    KC_NO,            KC_NO,         KC_NO,         KC_NO,        KC_NO,         RGB_MOD,                                                                                              KC_MAC_PASTE,   KC_NO,          KC_NO,           KC_NO,           KC_NO,              KC_NO,
+    SH_MON,           KC_NO,         KC_MAC_CUT,    KC_MAC_COPY,  KC_MAC_PASTE,  KC_NO,                                                                                                KC_MAC_PASTE,   LGUI(KC_LEFT),  KC_NO,           LGUI(KC_RIGHT),  KC_PGDOWN,          SH_MON,
+    KC_NO,            KC_NO,         KC_NO,         KC_NO,        KC_NO,         RGB_MOD,                                                                                              RGB_TOG,        KC_NO,          KC_NO,           KC_NO,           KC_NO,              KC_NO,
                                                                                  RGB_SAD,          RGB_SAI,               MOON_LED_LEVEL,             RGB_SLD,  RGB_HUD,               RGB_HUI
   ),
 };
