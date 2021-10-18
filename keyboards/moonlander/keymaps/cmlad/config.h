@@ -21,5 +21,6 @@
 #define AUTO_SHIFT_TIMEOUT 187
 #define NO_AUTO_SHIFT_TAB
 */
-
+/*
 #define SWAP_HANDS_ENABLE
+*/
