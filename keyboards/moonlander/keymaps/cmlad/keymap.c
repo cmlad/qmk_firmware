@@ -31,6 +31,7 @@
 #define KC_MAC_CUT LGUI(KC_X)
 #define KC_MAC_COPY LGUI(KC_C)
 #define KC_MAC_PASTE LGUI(KC_V)
+#define KC_LCAG LCAG(KC_NO)
 #define MOON_LED_LEVEL LED_LEVEL
 
 enum custom_keycodes {
@@ -51,7 +52,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TAB,           KC_Q,          KC_W,          KC_E,         KC_R,          KC_T,             KC_NO,                                                       KC_NO,                 KC_Y,           KC_U,          KC_I,             KC_O,            KC_P,               KC_BSLASH,
     LT(1,KC_ESCAPE),  LCTL_T(KC_A),  LALT_T(KC_S),  LGUI_T(KC_D), LSFT_T(KC_F),  LCAG_T(KC_G),     KC_NO,                                                       KC_LBRACKET_RBRACKET,  LCAG_T(KC_H),   LSFT_T(KC_J),  LGUI_T(KC_K),     LALT_T(KC_L),    LCTL_T(KC_SCOLON),  LT(2,KC_QUOTE),
     KC_NO,            KC_Z,          KC_X,          KC_C,         KC_V,          KC_B,                                                                                                 KC_N,           KC_M,          KC_COMMA_LBRACE,  KC_DOT_RBRACE,   KC_SLASH,           KC_LANGLEBR_RANGLEBR,
-    KC_NO,            KC_NO,         KC_NO,         MO(1),        KC_NO,         KC_AUDIO_VOL_UP,                                                                                      KC_AUDIO_MUTE,  KC_NO,         MO(2),            KC_NO,           KC_NO,              KC_NO,
+    KC_NO,            KC_NO,         KC_NO,         KC_NO,        KC_NO,         KC_AUDIO_VOL_UP,                                                                                      KC_AUDIO_MUTE,  KC_NO,         KC_NO,            KC_NO,           KC_NO,              KC_NO,
                                                                                  LT(2,KC_SPACE),   KC_NO,                 KC_AUDIO_VOL_DOWN,          KC_NO,    KC_ENTER,              LT(1,KC_SPACE)
   ),
   [1] = LAYOUT_moonlander(
@@ -65,7 +66,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [2] = LAYOUT_moonlander(
     KC_NO,            KC_NO,         KC_NO,         KC_NO,        KC_NO,         KC_NO,            KC_NO,                                                       KC_F7,                 KC_F8,          KC_F9,          KC_F10,          KC_F11,          KC_F12,             KC_DELETE,
     KC_NO,            KC_NO,         KC_NO,         KC_NO,        KC_NO,         KC_NO,            KC_NO,                                                       KC_NO,                 KC_MAC_CUT,     LALT(KC_LEFT),  KC_UP,           LALT(KC_RIGHT),  KC_NO,              KC_NO,
-    KC_NO,            KC_LCTRL,      KC_LALT,       KC_LGUI,      KC_LSHIFT,     KC_NO,            KC_NO,                                                       KC_NO,                 KC_MAC_COPY,    KC_LEFT,        KC_DOWN,         KC_RIGHT,        KC_PGUP,            KC_NO,
+    KC_NO,            KC_LCTRL,      KC_LALT,       KC_LGUI,      KC_LSHIFT,     KC_LCAG,          KC_NO,                                                       KC_NO,                 KC_MAC_COPY,    KC_LEFT,        KC_DOWN,         KC_RIGHT,        KC_PGUP,            KC_NO,
     KC_NO,            KC_NO,         KC_MAC_CUT,    KC_MAC_COPY,  KC_MAC_PASTE,  KC_NO,                                                                                                KC_MAC_PASTE,   LGUI(KC_LEFT),  KC_NO,           LGUI(KC_RIGHT),  KC_PGDOWN,          KC_NO,
     KC_NO,            KC_NO,         KC_NO,         KC_NO,        KC_NO,         RGB_MOD,                                                                                              RGB_TOG,        KC_NO,          KC_NO,           KC_NO,           KC_NO,              KC_NO,
                                                                                  RGB_SAD,          RGB_SAI,               MOON_LED_LEVEL,             RGB_SLD,  RGB_HUD,               RGB_HUI
